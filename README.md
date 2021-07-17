@@ -11,3 +11,10 @@ So I intend to simplify the process so that people can be informed about their d
 
 ## Plan
 Make a better dashboard using the "dash" library (https://pypi.org/project/dash/)
+
+## Technologies
+[dash](https://plotly.com/dash/),
+[plotly](https://plotly.com/),
+[flask](https://flask.palletsprojects.com/en/2.0.x/),
+[react](https://reactjs.org/),
+[pandas](https://pandas.pydata.org/)
