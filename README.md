@@ -1,9 +1,9 @@
 # open_payments_dashboard
-Better dashboard for Open Payments API (https://openpaymentsdata.cms.gov)
+Better dashboard for Open Payments API
 
 ## Context
-Open Payments is a government program that publishes financial data about relatioship between pharma and doctors.
-The hope is that this will provide a more transparent system to limit the perverse incentive of doctors prescribing medications made by those pharma who pay them to.
+Open Payments (https://openpaymentsdata.cms.gov) is a government program that publishes financial data about relatioship between pharma and doctors.
+The hope is that this will provide a more transparent system to limit the perverse incentive of doctors prescribing medications made by those pharma companies who pay them.
 
 ## Motivation
 I was curious to know who was the most paid in a given year, but I had to do manual analysis of the data using pandas myself which is out of reach for most people.
