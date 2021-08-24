@@ -15,6 +15,9 @@ app.layout = html.Div([
     ]),
     html.Br(),
     html.Div(id="my-output"),
+    html.Iframe(
+        src="https://google.com",
+    ),
 ])
 
 @app.callback(
