@@ -1,5 +1,5 @@
 # open_payments_dashboard
-Better dashboard for Open Payments API
+Better dashboard for Open Payments API (https://open-payments-dashboard.herokuapp.com/)
 
 ## Context
 Open Payments (https://openpaymentsdata.cms.gov) is a government program that publishes financial data about relatioship between pharma and doctors.
