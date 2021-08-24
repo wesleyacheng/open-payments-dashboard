@@ -1,4 +1,4 @@
-# open_payments_dashboard
+# open-payments-dashboard
 Better dashboard for Open Payments API (https://open-payments-dashboard.herokuapp.com/)
 
 ## Context
