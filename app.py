@@ -35,7 +35,7 @@ app.layout = html.Div([
     html.Br(),
     dash_table.DataTable(
         id="datatable-paging",
-        columns=[{"name":i, "id":i} for i in sorted(df.columns)],
+        columns=[{"name":i, "id":i} for i in df.columns],
 
         page_current=0,
         page_size=PAGE_SIZE,
