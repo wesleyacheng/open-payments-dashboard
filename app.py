@@ -57,13 +57,17 @@ app.layout = html.Div([
         *CMS publishes the data attested to by reporting entities.*
         *The data is open to individual interpretation.*
 
-        Source: [https://www.cms.gov/openpayments](https://www.cms.gov/openpayments)
+        Official Source: [https://www.cms.gov/openpayments](https://www.cms.gov/openpayments)
         """),
     ]),
     html.Div([
         dcc.Markdown("""
         ### Note:
-        This dataset only contains 2019 General Payments.
+        Dataset: Only contains 2019 General Payments.
+
+        Github Repo: [wesleyacheng/open_payments_dashboard](https://github.com/wesleyacheng/open_payments_dashboard)
+
+        Made with 🍵 by [@wesleyacheng](https://github.com/wesleyacheng)
         """)
     ]),
 ])
