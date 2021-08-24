@@ -16,6 +16,13 @@ PAGE_SIZE = 10
 app.layout = html.Div([
     html.Div([
         html.Center([
+            html.H1([
+                "Better Open Payments Dashboard",
+            ]),
+        ]),
+    ]),
+    html.Div([
+        html.Center([
             "Doctor Name Search",
             html.Br(),
             dcc.Input(
@@ -38,6 +45,27 @@ app.layout = html.Div([
         sort_mode="single",
         sort_by=[],
     ),
+    html.Div([
+        dcc.Markdown("""
+        ## What is Open Payments?
+
+        Open Payments is a national disclosure program that promotes a more transparent and accountable health care system.
+
+        Open Payments houses a publicly accessible database of payments that reporting entities, including drug and medical device companies, make to covered recipients like physicians.
+
+        *Please note that CMS [Centers for Medicare & Medicaid Services] does not comment on what relationships may be beneficial or potential conflicts of interest.*
+        *CMS publishes the data attested to by reporting entities.*
+        *The data is open to individual interpretation.*
+
+        Source: [https://www.cms.gov/openpayments](https://www.cms.gov/openpayments)
+        """),
+    ]),
+    html.Div([
+        dcc.Markdown("""
+        ### Note:
+        This dataset only contains 2019 General Payments.
+        """)
+    ]),
 ])
 
 
@@ -53,9 +81,11 @@ def update_table(page_current, page_size, sort_by, search_str):
 
     dff = df
 
+    # filter dataset with user-inputted search string
     if search_str:
         dff = dff.loc[dff["DOCTOR_NAME"].str.contains(search_str.upper())]
 
+    # sort by specific user-chosen configuration
     if sort_by:
         dff = dff.sort_values(
             sort_by[0]["column_id"],
@@ -63,6 +93,7 @@ def update_table(page_current, page_size, sort_by, search_str):
             inplace=False
         )
 
+    # paginate
     dff = dff.iloc[page_current*page_size:(page_current+1)*page_size].to_dict("records")
 
     return dff
