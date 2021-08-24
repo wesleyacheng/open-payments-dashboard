@@ -6,9 +6,9 @@ import dash_table
 import pandas as pd
 
 df = pd.read_csv("data/2019_general_payments.csv")
+df_public_cols = [col for col in df.columns if col != "DOCTOR_ID"]
 
 app = dash.Dash(__name__)
-
 server = app.server
 
 PAGE_SIZE = 10
@@ -35,7 +35,7 @@ app.layout = html.Div([
     html.Br(),
     dash_table.DataTable(
         id="datatable-paging",
-        columns=[{"name":i, "id":i} for i in df.columns],
+        columns=[{"name":i, "id":i} for i in df_public_cols],
 
         page_current=0,
         page_size=PAGE_SIZE,
@@ -98,7 +98,7 @@ def update_table(page_current, page_size, sort_by, search_str):
         )
 
     # paginate
-    dff = dff.iloc[page_current*page_size:(page_current+1)*page_size].to_dict("records")
+    dff = dff.iloc[page_current*page_size:(page_current+1)*page_size][df_public_cols].to_dict("records")
 
     return dff
 
