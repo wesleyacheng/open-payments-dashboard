@@ -57,7 +57,7 @@ app.layout = html.Div([
         *CMS publishes the data attested to by reporting entities.*
         *The data is open to individual interpretation.*
 
-        Official Source: [https://www.cms.gov/openpayments](https://www.cms.gov/openpayments)
+        *Official Source: [https://www.cms.gov/openpayments](https://www.cms.gov/openpayments)*
         """),
     ]),
     html.Div([
