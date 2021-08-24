@@ -65,7 +65,7 @@ app.layout = html.Div([
         ### Note:
         Dataset: Only contains 2019 General Payments.
 
-        Github Repo: [wesleyacheng/open_payments_dashboard](https://github.com/wesleyacheng/open_payments_dashboard)
+        Github Repo: [wesleyacheng/open-payments-dashboard](https://github.com/wesleyacheng/open-payments-dashboard)
 
         Made with 🍵 by [@wesleyacheng](https://github.com/wesleyacheng)
         """)
