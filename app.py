@@ -53,7 +53,7 @@ app.layout = html.Div([
 
         Open Payments houses a publicly accessible database of payments that reporting entities, including drug and medical device companies, make to covered recipients like physicians.
 
-        *Please note that CMS [Centers for Medicare & Medicaid Services] does not comment on what relationships may be beneficial or potential conflicts of interest.*
+        *Please note that CMS (Centers for Medicare & Medicaid Services) does not comment on what relationships may be beneficial or potential conflicts of interest.*
         *CMS publishes the data attested to by reporting entities.*
         *The data is open to individual interpretation.*
 
