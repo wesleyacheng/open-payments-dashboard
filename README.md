@@ -18,3 +18,6 @@ Make a better dashboard using the "dash" library (https://pypi.org/project/dash/
 [flask](https://flask.palletsprojects.com/en/2.0.x/),
 [react](https://reactjs.org/),
 [pandas](https://pandas.pydata.org/)
+
+## Screenshots
+![Screen Shot 2021-08-24 at 4 40 21 PM](https://user-images.githubusercontent.com/15952538/130856674-d3626ecb-531e-46e5-adbf-ce26ffa04b65.png)
