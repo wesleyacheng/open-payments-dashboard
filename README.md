@@ -10,7 +10,7 @@ I was curious to know who was the most paid in a given year, but I had to do man
 So I intend to simplify the process so that people can be informed about their doctors and relationship with pharma in general.
 
 ## Plan
-Make a better dashboard using the "dash" library (https://pypi.org/project/dash/)
+Make a better dashboard using plotly's dash library (https://pypi.org/project/dash/)
 
 ## Technologies
 [dash](https://plotly.com/dash/),
